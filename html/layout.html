@@ -29,9 +29,15 @@
         </section>
         <section id="content">
           <section id="content-body">
-            {{ next_link }}
-            {{ prev_link }}
+            <ul class="page-navigation">
+              <li>{{ next_link }}</li>
+              <li>{{ prev_link }}</li>
+            </ul>
             {{ content }}
+            <ul class="page-navigation">
+              <li>{{ next_link }}</li>
+              <li>{{ prev_link }}</li>
+            </ul>
           </section>
         </section>
       </div>
