@@ -17,6 +17,11 @@
     {{ header }}
   </head>
   <body data-type="book">
+    {% if github_url %}
+       <a href="{{ github_url }}">
+          <img src="https://s3.amazonaws.com/orm-atlas-media/fork-on-github.png" class="fork-on-github"/>
+       </a>
+    {% endif %}
     <header>
       <div id="buttons">
         <a href="#" id="link-toc">☰</a>
