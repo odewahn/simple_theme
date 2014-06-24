@@ -1,0 +1,38 @@
+{{ doctype }}
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'> </link>
+    <link rel="stylesheet" type="text/css" href="styles.css"> </link>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+    <script type="text/javascript">
+      $(function() {
+        $("#link-toc").click(function(e) {
+          e.preventDefault();
+          $("#sidebar").toggle();
+        });
+      });
+    </script>
+    {{ header }}
+  </head>
+  <body data-type="book">
+    <header>
+      <div id="buttons">
+        <a href="#" id="link-toc">☰</a>
+      </div>
+      <h1>{{ title }}</h1>
+      </header>
+      <div id="flex-box">
+        <section id="sidebar">
+          {{ toc }}
+        </section>
+        <section id="content">
+          <section id="content-body">
+            {{ content }}
+          </section>
+        </section>
+      </div>
+  </body>
+</html>
