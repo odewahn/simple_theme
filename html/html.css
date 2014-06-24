@@ -51,12 +51,50 @@ header #buttons a {
 
 #flex-box #sidebar {
   flex: 0 0 250px;
-  display: none;
   border-right: 1px solid #E0E0E0;
 }
 
 #flex-box #content {
   flex: 1;
+}
+
+/* TOC
+----------------------------------------------------------------- */
+
+/* First Level */
+
+nav[data-type="toc"] ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav[data-type="toc"] li {
+  padding: 8px 10px 8px 15px;
+}
+
+nav[data-type="toc"] a {
+  color: #686868;
+  font-size: 14px;
+}
+
+/* Second Level */
+
+nav[data-type="toc"] li li {
+  font-size: 13px;
+  list-style-type: lower-roman;
+  list-style-position: inside;
+}
+
+nav[data-type="toc"] li li a {
+  font-size: 13px;
+}
+
+/* Third Level */
+
+nav[data-type="toc"] li ol ol {
+  display: none;
 }
 
 /* Content
@@ -74,4 +112,12 @@ header #buttons a {
 
 #content-body p {
   line-height: 1.6em;
+}
+
+#content-body pre {
+  background-color: #F5F5F5;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  padding: 10px;
+  white-space: pre-wrap;
 }
