@@ -92,6 +92,7 @@ nav[data-type="toc"] a {
 /* Second Level */
 
 nav[data-type="toc"] li li {
+  display: none;
   font-size: 13px;
   list-style-type: lower-roman;
   list-style-position: inside;
