@@ -161,7 +161,7 @@ ul.page-navigation li:nth-child(2) {
   line-height: 1.6em;
 }
 
-#content-body pre {
+#content-body pre[data-type="programlisting"] {
   background-color: #F5F5F5;
   border: 1px solid #CCC;
   border-radius: 5px;
