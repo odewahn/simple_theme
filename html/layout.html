@@ -30,14 +30,6 @@
       </div>
       <img class="logo" src="http://orm-logo-service.herokuapp.com/{{ practice-area }}/logo.svg"/>
       <h1>{{ title }}</h1>
-
-      {% if follow %}
-
-<a href="https://twitter.com/{{ follow }}" class="twitter-follow-button" data-show-count="false">Follow</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-      {% endif %}
-
       </header>
       <div id="flex-box">
         <section id="sidebar">
@@ -45,11 +37,12 @@
         </section>
         <section id="content">
           <section id="content-body">
+	
              {% if follow %}
-
+                <div style="margin-top: 10px">
 		<a href="https://twitter.com/{{ follow }}" class="twitter-follow-button" data-show-count="false">Follow</a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
+                 </div>
 	      {% endif %}
 
             {{ content }}
