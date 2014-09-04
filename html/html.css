@@ -173,3 +173,7 @@ ul.page-navigation li:nth-child(2) {
 	width: 100%;
 }
 
+#twitter-follow-button {
+	float:left;
+	margin-left: 20px;
+}
