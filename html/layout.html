@@ -7,6 +7,25 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
 
+    <!-- Set up your variables. Tweak for project specifics -->
+    <script type="text/javascript">
+      window.disqus_shortname = "{{ forum_shortname }}"
+      window.disqus_title = window.location.pathname
+    </script>
+
+    <script type="text/javascript" src="https://d2uogd9jz9k9zm.cloudfront.net/disqus-0.0.1.min.js"> </script>
+
+
+
+    <!-- Set the tracking code in a variable -->
+    <script type="text/javascript">
+       if(!window.atlasplugins) window.atlasplugins = {}
+       atlasplugins.gaTrackingCode = "{{ ga_code }}"
+    </script>
+
+    <!-- Include the plugin -->
+    <script type="text/javascript" src="https://d2uogd9jz9k9zm.cloudfront.net/googleanalytics-0.0.1.min.js"></script>
+
 
     <script type="text/javascript">
       $(function() {
@@ -28,7 +47,6 @@
       <div id="buttons">
         <a href="#" id="link-toc">☰</a>
       </div>
-      <img class="logo" src="http://orm-logo-service.herokuapp.com/{{ practice-area }}/logo.svg"/>
       <h1>{{ title }}</h1>
       </header>
       <div id="flex-box">
