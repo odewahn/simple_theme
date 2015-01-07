@@ -10,7 +10,8 @@
     <!-- Set up your variables. Tweak for project specifics -->
     <script type="text/javascript">
       window.disqus_shortname = "{{ forum_shortname }}"
-      window.disqus_title = window.location.pathname
+      window.disqus_title = $('title').text() + " / " + $('h1').first().text();
+      window.disqus_id = $('title').text() + " / " + $('section').first().attr('id');
     </script>
 
     <script type="text/javascript" src="https://d2uogd9jz9k9zm.cloudfront.net/disqus-0.0.1.min.js"> </script>
